@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../.gradle/caches/transforms-3/beaddc2a913d5bd3c5f29edcac13ccc1/transformed/jetified-android-segmented-1.0.6/res/drawable/button_text_color.xml" value="0.16940789473684212" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_carbook.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_carbook_result.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_signup.xml" value="0.15" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/activity_splash.xml" value="0.184375" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/car_demand_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/cardview_car_booking.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/cardview_car_cargo_demand.xml" value="0.22" />
+        <entry key="..\:/Users/SAP/Desktop/CarCloud/app/src/main/res/layout/cardview_demand_list.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/drawable/layout_bg.xml" value="0.16940789473684212" />
+        <entry key="app/src/main/res/drawable/layout_login_bg.xml" value="0.16940789473684212" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15459454536636075" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.15744535519125682" />
+        <entry key="app/src/main/res/layout/add_employee_fragment.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/base_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/car_cargo_demand_fragment.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/layout/car_demand_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/carcargo_demand_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/cardview_add_employee.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/cardview_car_cargo_demand.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/cardview_demand_list.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/cardview_demand_swipe.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/cardview_deneme.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/cargo_demand_fragment.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/layout/change_password_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/demand_list_detail_fragment.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/demand_list_fragment.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/layout_bg.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/layout/new_car_demand_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/new_cargo_demand_fragment.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/layout/reject_car_demand_fragment.xml" value="0.11" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.15921052631578947" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.15921052631578947" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

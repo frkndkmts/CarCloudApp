@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/museosans700"
+                    android:text="Araç Talep Formu"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandReason"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Talep Nedeni"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandReasonAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandArea"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Bölge"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandAreaAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandProject"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Proje Kodu"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandProjectAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandLocation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Gidilecek Lokasyon"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandLocationAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandCity"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Şehir"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandCityAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandPhoneNo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Telefon Numarası"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandPhoneNoAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandExplanation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Açıklama"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandExplanationAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/segmented2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/futureBT"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bugün" />
+
+                    <RadioButton
+                        android:id="@+id/previousBT"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yarın" />
+                </info.hoang8f.android.segmented.SegmentedGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandDurationDay"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Gün Sayısı"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandDurationDayAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/demandStartTime"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0.5"
+                        android:hint="Alış Saati"
+                        android:textColorHint="@color/white">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/demandStartTimeAC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#9297ad" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/demandEndTime"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0.5"
+                        android:hint="Teslim Saati"
+                        android:textColorHint="@color/white">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/demandEndTimeAC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#9297ad" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Katılımcılar"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/line1TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <Button
+                        android:id="@+id/line1BT"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/line2TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <Button
+                        android:id="@+id/line2BT"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/line3TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <Button
+                        android:id="@+id/line3BT"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/line4TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <Button
+                        android:id="@+id/line4BT"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/demandCarBT"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/loginbuttonbg"
+                android:fontFamily="@font/museosans700"
+                android:padding="12dp"
+                android:text="Araç Rezerve Et"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18.5sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/museosans700"
+                    android:text="Kargo Talep Formu"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cargoType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Kargo Tipi"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/cargoTypeAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/deliveryLocation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Teslim Edilecek Lokasyon"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/deliveryLocationAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/deliveryDepartment"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Teslim Edilecek Departman"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/deliveryDepartmentAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/teslimdenemekisi"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teslim Edilecek Kişi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receiverEnameTV"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/receiverAddress"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Alıcı Adresi"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/receiverAddressAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demandExplanation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Açıklama"
+                    android:textColorHint="@color/white">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/demandExplanationAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#9297ad" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/segmented2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/futureBT"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bugün" />
+
+                    <RadioButton
+                        android:id="@+id/previousBT"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yarın" />
+                </info.hoang8f.android.segmented.SegmentedGroup>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/demandEndTime"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0.5"
+                        android:hint="Teslim Saati"
+                        android:textColorHint="@color/white">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/demandEndTimeAC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#9297ad" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/demandCargoBT"
+                android:fontFamily="@font/museosans700"
+                android:textSize="18.5sp"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:background="@drawable/loginbuttonbg"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Kargo Talep Et" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
